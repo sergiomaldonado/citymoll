@@ -1,0 +1,18 @@
+{
+     "android": {
+         "debug": {
+             "keystore": "citymollKey.keystore",
+             "storePassword": "Thulu1973",
+             "alias": "citymoll",
+             "password" : "Thulu1973",
+             "keystoreType": ""
+         },
+         "release": {
+             "keystore": "citymollKey.keystore",
+             "storePassword": "Thulu1973",
+             "alias": "citymoll",
+             "password" : "Thulu1973",
+             "keystoreType": ""
+         }
+     }
+ }
