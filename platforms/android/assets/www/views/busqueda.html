@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">  -->
+       <script src="../js/angular.min.js" > </script>
+       <script type="text/javascript" url="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+       <script src="../js/angular-route.min.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+       <script>
+         // Initialize Firebase
+         var config = {
+           apiKey: "AIzaSyDn2BVpslXgVXFNY8exbX7zeZ-LetTwxPU",
+           authDomain: "citymoll-aa08a.firebaseapp.com",
+           databaseURL: "https://citymoll-aa08a.firebaseio.com",
+           storageBucket: "citymoll-aa08a.appspot.com",
+         };
+         firebase.initializeApp(config);
+
+            function inicio(){
+
+              var mail = document.getElementById('mail');
+              var pass = document.getElementById('pass');
+              var boton = document.getElementById('btn_cuenta');
+              boton.addEventListener("click", enviarform);
+
+
+            }
+
+
+            function enviarform(){
+            var m = mail.value;
+            var p = pass.value;
+
+            var db = firebase.database();
+
+            db.ref("usuarios").push({
+
+                  Mail:m,
+                  contrasena:p });}
+
+
+        </script>
+
+
+
+
+        <!-- configuracion de rutas -->
+
+
+       <meta name="format-detection" content="telephone=no">
+       <meta name="msapplication-tap-highlight" content="no">
+       <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+       <meta charset="utf-8">
+       <title>Citymoll</title>
+       <!-- Librerias css-->
+       <link rel="stylesheet" type="text/css" href="../css/materialize.css">
+       <link rel="stylesheet" type="text/css" href="../css/homeApp.css">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+       </head>
+      <!--Cuerpo de la aplicación-->
+
+       <body ng-app="citymollapp">
+
+       <div class="ventana" >
+
+         <div id="head-1" class="z-depth-1">
+
+           <div id="ico-search">
+
+           </div>
+
+           <div>
+             <div id="ico-search"><a href="javascript:history.back(1)">
+             <i id="flecha-1" class="material-icons left">arrow_back</i></a></div>
+             <div id="nav-search">
+           <nav class="z-depth-0">
+            <div  class="nav-wrapper">
+             <form>
+               <div class="input-field">
+
+                 <input  autofocus="autofocus" id="search" type="search" required>
+               <label for="search"><i class="material-icons">search</i></label>
+                 <i  href="javascript:history.back(1)" class="material-icons">close</i>
+               </div>
+             </form>
+           </div>
+         </nav></div>
+          </div>
+         </div>
+
+
+
+
+
+
+
+          <script>inicio();</script>
+
+
+
+
+                   </div>
+
+                         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+                   <script>
+                     $(window).load(function() {
+                       $('#preloader').fadeOut('slow');
+                       $('body').css({'overflow':'hidden'});
+                   })
+
+
+
+
+                   </script>
+                   <!-- Termina la cabesera-->
+
+
+                   <div id="preloader"><div id="logo" ng-include src=" 'img/logo.svg' "></div>
+
+                       <div id="loader">
+
+                         <h3 id="cargando"><div class="preloader-wrapper big active">
+
+      <div class="spinner-layer spinner-yellow-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div></h3></div>
+                   </div>
+
+
+       <!-- Script de materialize-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="../js/materialize.min.js"></script>
+        <!-- Script de Cordova-->
+        <script type="text/javascript" src="../cordova.js"></script>
+        <script type="text/javascript" src="../js/index.js"></script>
+
+
+    </body>
+</html>

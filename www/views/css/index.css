@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,100,500,700,900);
+
+body{ background-color: #FF3D00; margin:0 auto; text-align: center;
+    font-family: 'Roboto', sans-serif;
+   
+    }
+
+#wrap{ position:relative; margin:0 auto; width:100%; text-align: center;z-index: 12;
+    }
+
+#logo-1{margin 0 auto; text-align: center; padding-top: 100px;}
+
+#submit{width:100%; color:#422C02; height:60px; background-color:#FFC600; border: 0px;}
+
+#button_index{width:100%; color:#422C02; height:60px; background-color:#FFC600; border: 0px;}
+ 
+#button_index_2{width:100%; color:white; height:60px; background-color:#872411; border: 0px;}
+#cont_botones{width:100%; float:left; position:fixed; bottom:0; z-index:999999;
+background-image: url(../images/bg-index.png); 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background-repeat: repeat-x;
+    background-position: center top;
+    padding-top: 330px;
+    padding-bottom: 0px;}
+
+#cont_botones_login{width:100%; float:left; position:fixed; bottom:0; z-index:999999;
+background-image: url(../images/bg-index.png); 
+    background-repeat: repeat-x;
+    background-position: right top;
+    padding-top: 330px;
+    padding-bottom: 0px;
+z-index:1;}
+
+h1,h2,h3,h4{font-family: 'Roboto', sans-serif; font-weight:500; color: white;}
+
+#form_login{margin: 50px auto; text-align: center; z-index: 10; position: relative;}
+
+#bienvenida{ margin-top:200px;}

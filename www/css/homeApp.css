@@ -1,0 +1,229 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+body {
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  color: white;
+  overflow-x: hidden;
+ max-width: 100%;
+  font-family: 'Lato', sans-serif;
+
+}
+
+#icons_home{
+ font-size:40px;
+ margin-top: 13px;
+
+}
+
+#head-1{
+
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  text-align: left;
+  overflow-y: hidden;
+
+}
+
+#logo-image{
+  margin-top: 15px;
+}
+
+
+
+#headTop{
+
+  background: #ff3d00;
+  width: 100%;
+  height: 50px;
+
+
+}
+
+#busqueda{
+
+  width: 70%;
+  background-color: transparent;
+  height: 100%;
+  overflow: hidden;
+  float: left;
+
+
+}
+
+#iconos{
+
+  width: 30%;
+  background-color:transparent;;
+  height: 100%;
+  float: right;
+
+}
+#icon_map{
+ font-size:40px;
+ margin-top: 11px;
+
+ font-size: 30px;
+ color: white;
+
+}
+#icon_logout{
+ font-size:40px;
+ margin-top: 11px;
+ font-size: 30px;
+ color: white;
+
+
+
+}
+
+
+
+#head{
+
+  background: #ff3d00;
+  width: 100%;
+  height: 50px;overflow: hidden;
+}
+
+#logo{
+
+  width: 33.3333%;
+  background-color: transparent;
+  height: 100%;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+}
+#horario{
+
+  width: 33.3333%;
+  background-color: transparent;
+  height: 100%;
+  float:left;
+}
+#ciudad{
+
+  width: 33.3333%;
+  background-color: transparent;
+  height: 100%;
+  float: right;
+  color:white;
+}
+/**
+#wrap{
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  overflow: scroll;
+  padding-bottom: 30px;
+  position: absolute;
+  z-index: 999999999;
+
+
+
+}**/
+
+#preloader {
+    position: fixed;
+    top:0; left:0;
+    right:0; bottom:0;
+    background: white;
+    z-index:100;
+    margin-left: -100px 0;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: red;
+
+
+}
+#loader {
+
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left:50%; top:50%;
+
+    margin:-50px 0 0 -100px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+#tabs{
+position:fixed; bottom:0; z-index:999999;
+margin-top: 100px;
+width: 100%;
+box-shadow: 25px 25px 25px black;
+border: 1px solid #D3D3D3;
+
+}
+
+#test1{
+
+  background: white;
+  position: fixed;
+  top:0; left:0;
+  right:0; bottom:0;
+  z-index: 10;
+  margin-left: -100px 0;
+  text-align: center;
+  font-weight: 300;
+  color: black;
+  width: 100%;
+  overflow-y: scroll;
+
+}
+#test2{
+  background-color: white;
+  position: fixed;
+  top:0; left:0;
+  right:0; bottom:0;
+  z-index: 10;
+  margin-left: -100px 0;
+  text-align: center;
+  font-weight: 300;
+  overflow-y:scroll;
+
+}
+#test3{
+  background-color: white;
+  position: fixed;
+  top:0; left:0;
+  right:0; bottom:0;
+  z-index: 10;
+  margin-left: -100px 0;
+  text-align: center;
+  font-weight: 300;
+  color: white;
+  overflow-y: scroll;
+
+}
+
+
+
+#flecha-1{
+
+  color: #ff3d00;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-top: 14px;
+
+}
+
+#ico-search{
+
+  float: left;
+  width: 9%;
+  color: red;
+
+}
+
+#nav-search{
+
+  float: right;
+  width:91%;
+  height: 100%;
+}

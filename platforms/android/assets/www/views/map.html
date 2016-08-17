@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">  -->
+
+
+
+       <link rel="stylesheet" href="JQ/jquery.mobile-1.4.2.min.css" />
+          <script src="JQ/jquery-2.1.1.min.js"></script>
+          <script src="JQ/jquery.mobile-1.4.2.min.js"></script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn2BVpslXgVXFNY8exbX7zeZ-LetTwxPU" type="text/javascript"></script>
+
+              <script>  $( document ).on( "pageinit", "#paginaMapa", function(e,data) {
+
+              var defaultPos = new google.maps.LatLng(19.289168, -99.653440);
+
+              if (navigator.geolocation) {
+                          function exito(pos) {
+                                MuestraMapa(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+
+                              }
+                  function falla(error) {
+                  //si falla mostrar mpara en posicion por defecto
+                    alert('Error en servicio Geolocalizador');
+                    MuestraMapa(defaultPos);
+                  }
+
+                //maximumAge- Guarda la posicion por 5 minutos
+                //enableHighAccuracy: Se tratan de obtener los mejores resultados posible del GPS
+                //timeout: el tiempo maximo que se espera para obtener la posicion en este caso 5 segundos
+                  var options = {maximumAge: 500000, enableHighAccuracy:true, timeout: 5000};
+                  navigator.geolocation.getCurrentPosition(exito, falla, options );
+                }//FIN IF
+                else {
+                           MuestraMapa(defaultPos);  // No soporta geolocalizacion y dibuja el mapa en posicion Default
+                           }
+
+                 //FUNCION DIBUJAR MAPa
+                 function MuestraMapa(latlng) {
+
+                  var myOptions = {
+                               zoom: 16,
+                               center: latlng,
+                  disableDefaultUI: true,
+                               mapTypeId: google.maps.MapTypeId.ROADMAP};
+
+                  var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+                  var infowindow = new google.maps.InfoWindow({
+                                         position: latlng,
+                                         content: '<p>Tu posición actual</p>'+latlng
+                        });
+
+                  var marker = new google.maps.Marker({
+                    position: latlng,
+                    map: map,
+                    title: "Mi posición",
+                    animation: google.maps.Animation.DROP
+                            });
+                  google.maps.event.addListener(marker, 'click', function() {infowindow.open(map,marker);});
+
+                 }// Fin muestra mapa
+
+              });
+               </script>
+               <style>
+            #map-canvas{
+                height:100%;
+                width:100%;
+                padding:0;
+                position:absolute !important;
+                top:40px;
+                righ:0px;
+                bottom:0px !important;
+                left:0px !important;
+              }
+          </style>
+      <!-- configuracion de rutas -->
+
+
+       <meta name="format-detection" content="telephone=no">
+       <meta name="msapplication-tap-highlight" content="no">
+       <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+       <meta charset="utf-8">
+       <title>Citymoll</title>
+       <!-- Librerias css-->
+
+
+
+       </head>
+      <!--Cuerpo de la aplicación-->
+
+       <body>
+
+
+
+           <!--- MAPA MAPA MAPA -->
+
+
+
+
+               	<div data-role="page" id="paginaMapa" data-url="map-page">
+                   	<div data-role="header">
+                       	<h1>Tu posición actual</h1>
+                       </div>
+                       <div id="map-canvas"></div>
+
+                   </div>
+
+
+
+           <!--- TERMINA MAPA MAPA MAPA -->
+
+
+
+
+    </body>
+</html>

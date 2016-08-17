@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">  -->
+       <meta name="format-detection" content="telephone=no">
+       <meta name="msapplication-tap-highlight" content="no">
+       <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+       <meta charset="utf-8">
+       <title>Citymoll</title>
+       <link rel="stylesheet" href="css/style.css">
+
+       <!-- Owl Carousel Assets -->
+        <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+        <link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+
+       </head>
+
+       <h1>Hola</h1>
+      <!--Cuerpo de la aplicación-->
+      <div id="owl-demo" class="owl-carousel">
+
+                      <a href="resultado=compras.html"><div class="item1"><div id="contiene_icono"><img src="img/ico_compras.png"><span style="color:#c1c1c1; font-size:18px; font-weight:300;margin-top:100px; margin-left:-85px; position:absolute; z-index:5;">Compras</span></div></div></a>
+                      <a href="resultado=comida.html"><div class="item2"><div id="contiene_icono"><img src="img/ico_comida.png"><span style="color:#c1c1c1; font-size:18px; font-weight:300;margin-top:100px; margin-left:-75px; position:absolute; z-index:5;">Comida</span></div></div></a>
+                      <a href="#"><div class="item3"><div id="contiene_icono"><img src="img/ico_fiesta.png"><span style="color:#c1c1c1; font-size:18px; font-weight:300;margin-top:100px; margin-left:-70px; position:absolute; z-index:5;">Fiesta</span></div></div></a>
+                      <a href="#"><div class="item4"><div id="contiene_icono"><img src="img/ico_tiket.png"><span style="color:#c1c1c1; font-size:18px; font-weight:300;margin-top:100px; margin-left:-80px; position:absolute; z-index:5;">Eventos</span></div></div></a>
+                      <a href="#"><div class="item5"><div id="contiene_icono"><img src="img/ico_lugares.png"><span style="color:#c1c1c1; font-size:18px; font-weight:300;margin-top:100px; margin-left:-80px; position:absolute; z-index:5;">Lugares</span></div></div></a>
+                      <a href="#"><div class="item6"><div id="contiene_icono"><img src="img/ico_servicio.png"><span style="color:#c1c1c1; font-size:18px; font-weight:300;margin-top:100px; margin-left:-80px; position:absolute; z-index:5;">Servicios</span></div></div></a></div>
+
+
+
+
+                          <script src="js/owl-carousel/owl.carousel.js"></script>
+
+
+                          <!-- Demo -->
+
+
+                          <script>
+                          $(document).ready(function() {
+
+                            var owl = $("#owl-demo");
+
+                            owl.owlCarousel({
+
+                            items : 5, //10 items above 1000px browser width
+                            itemsDesktop : [1000,3], //5 items between 1000px and 901px
+                            itemsDesktopSmall : [400,3], // 3 items betweem 900px and 601px
+                            itemsTablet: [100,3], //2 items between 600 and 0;
+                            itemsMobile : 3 // itemsMobile disabled - inherit from itemsTablet option
+
+                            });
+
+                          });
+                          </script>
+    </body>
+
+</html>

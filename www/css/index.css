@@ -1,24 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 body {
   margin: 0 auto;
   text-align: center;
   background: #FF3D00;
   color: white;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+font-family: 'Lato', sans-serif;
+  background-image: url('../img/bg-index.png') ;
+
+}
+p{margin: 0px; color: gray;}
+
+#text-head{
+  font-size: 25px;
+  color: black;
+  padding-top: 9px;
+
+}
+
+#flecha-1{
+
+  color: #ff3d00;
+  font-size: 30px;
+  margin-left: 10px;
+
+}
+
+h3{color:#aaaaaa;}
+
+#head-1{
+
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  text-align: left;
+
+}
+
+#nombre{ float: left;}
+#cancelar{float: right;}
+#nav-modal{
+  width: 100%;
+  height: 50px;
+  background-color: orange;
+}
+.ventanaLogin{
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  position: fixed;
+  /* background: #FF3D00;*/
+  background: white;
+  top: 0;
+  left: 0;
+  display:none;
+  z-index: 999999;
+}
+.ventanaRegistro{
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  position: fixed;
+    background: green;
+  top: 0;
+  left: 0;
+  display:none;
+  z-index: 999999;
+}
+
+
+
+
+.botones_bienvenida{
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  padding:0% 3%;
+  background-color: #A31C1C;
+  height: 170px;
+  position:fixed; bottom:0; z-index:999999;
+  font-size: 16px;
+
+
+}
+
+#btn_bienv{
+  margin: 0 auto;
+  margin-top: 25px;
+  text-align: center;
+  width: 95%;
+  color:#B71C1C;
+
+
+}
+#btn_bienv_2{
+  margin: 0 auto;
+  text-align: center;
+  width: 95%;
+  background-color: green;
+  margin-top: 5px;
+  margin-left: -2px;
+
+}
 
 #btn {
   margin: 0 auto;
   text-align: center;
   width: 100%;
-  color: #8B2201; }
+  color:#B71C1C;
+
+}
+
+#form_login{
+
+  width: 90%;
+  width: 95%;
+  text-align: left;
+  margin: 0 auto;
+}
+#btn_cuenta{
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+
+}
+
+
+
 
 #logo {
   margin-top: 100px;
   margin-bottom: 300px; }
 
-#menu_login {
-  width: 80%;
-  text-align: left;
-  margin: 0 auto; }
 
 #vista {
   margin-top: -250px; }
+
+
+  #preloader {
+      position: fixed;
+      top:0; left:0;
+      right:0; bottom:0;
+      background: #ff3d00;
+      z-index: 100;
+        margin-left: -100px 0;
+        text-align: center;
+          font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: red;
+    z-index: 999999;
+
+
+  }
+  #loader {
+
+      width: 200px;
+      height: 100px;
+      position: absolute;
+      left:50%; top:50%;
+
+      margin:-50px 0 0 -100px;
+      text-align: center;
+      font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+  }

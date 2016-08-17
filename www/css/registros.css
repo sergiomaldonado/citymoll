@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+body {
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  color: white;
+  overflow-x: hidden;
+ max-width: 100%;
+  font-family: 'Lato', sans-serif;
+
+}
+p{margin: 0px; color: gray;}
+
+#text-head{
+  font-size: 25px;
+  color: black;
+  padding-top: 9px;
+
+}
+
+#flecha-1{
+
+  color: #ff3d00;
+  font-size: 30px;
+  margin-left: 10px;
+
+}
+
+h3{color:#aaaaaa;}
+
+#head-1{
+
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  text-align: left;
+
+}
+
+#nombre{ float: left;}
+#cancelar{float: right;}
+
+
+
+#btn {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  color:#B71C1C;
+
+}
+
+#form_login .text:focus{
+ outline:0px;
+}
+#btn_cuenta .text:focus{
+ outline:0px;
+}
+
+#form_login{
+
+  width: 90%;
+  width: 95%;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+#btn_cuenta{
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  margin-top: 5px;
+
+}
+
+
+
+
+
+  #preloader {
+      position: fixed;
+      top:0; left:0;
+      right:0; bottom:0;
+      background: white;
+      z-index: 100;
+      margin-left: -100px 0;
+      text-align: center;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 300;
+      color: red;
+
+
+  }
+  #loader {
+
+      width: 200px;
+      height: 100px;
+      position: absolute;
+      left:50%; top:50%;
+
+      margin:-50px 0 0 -100px;
+      text-align: center;
+      font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+  }

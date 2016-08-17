@@ -2311,6 +2311,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
+
 }
 
 /* Text-level semantics
@@ -4067,8 +4068,7 @@ input[type=range] + .thumb {
 
 nav {
   color: #fff;
-  background-color: #ee6e73;
-  width: 100%;
+  background-color: transparent;
   height: 56px;
   line-height: 56px;
 }
@@ -4084,11 +4084,13 @@ nav i.material-icons {
   font-size: 2rem;
   height: 56px;
   line-height: 56px;
+  background-color: transparen;
 }
 
 nav .nav-wrapper {
   position: relative;
   height: 100%;
+
 }
 
 @media only screen and (min-width: 993px) {
@@ -4212,7 +4214,7 @@ nav .input-field input {
 
 nav .input-field input:focus, nav .input-field input[type=text]:valid, nav .input-field input[type=password]:valid, nav .input-field input[type=email]:valid, nav .input-field input[type=url]:valid, nav .input-field input[type=date]:valid {
   border: none;
-  box-shadow: none;
+  box-shadow: none;background-color: red;
 }
 
 nav .input-field label {
@@ -4221,17 +4223,20 @@ nav .input-field label {
 }
 
 nav .input-field label i {
-  color: rgba(255, 255, 255, 0.7);
+
+  color: #bf360c;
   transition: color .3s;
 }
 
 nav .input-field label.active i {
-  color: #fff;
+  color: #bf360c;
+
 }
 
 nav .input-field label.active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+
 }
 
 .navbar-fixed {
@@ -4239,6 +4244,7 @@ nav .input-field label.active {
   height: 56px;
   z-index: 998;
 }
+
 
 .navbar-fixed nav {
   position: fixed;
@@ -4790,6 +4796,9 @@ small {
     float: right;
   }
 }
+ /*****************************************************************************       TABS  **/
+
+
 
 .tabs {
   display: -webkit-flex;
@@ -4823,10 +4832,11 @@ small {
   letter-spacing: .8px;
   width: 15%;
   min-width: 80px;
+
 }
 
 .tabs .tab a {
-  color: #ee6e73;
+  color: #BEBEBE;
   display: block;
   width: 100%;
   height: 100%;
@@ -4836,7 +4846,7 @@ small {
 }
 
 .tabs .tab a:hover {
-  color: #f9c9cb;
+  color:  #ff3d00;
 }
 
 .tabs .tab.disabled a {
@@ -4844,11 +4854,13 @@ small {
   cursor: default;
 }
 
+
+
 .tabs .indicator {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #f6b2b5;
+  background-color: #ff3d00;
   will-change: left, right;
 }
 
@@ -5620,7 +5632,9 @@ label {
   color: #d1d1d1;
 }
 
-/* Text inputs */
+
+
+/************************************************************************* Text inputs */
 input:not([type]),
 input[type=text],
 input[type=password],
@@ -5635,8 +5649,9 @@ input[type=number],
 input[type=search],
 textarea.materialize-textarea {
   background-color: transparent;
+  color:#a8a8a8;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
+  border-bottom: 1px solid #b5b5b5;
   border-radius: 0;
   outline: none;
   height: 3rem;
@@ -5720,8 +5735,8 @@ input[type=tel]:focus:not([readonly]),
 input[type=number]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #26a69a;
-  box-shadow: 0 1px 0 0 #26a69a;
+  border-bottom: 1px solid #ff6d00;
+  box-shadow: 0 1px 0 0 #ff6d00;
 }
 
 input:not([type]):focus:not([readonly]) + label,
@@ -5737,7 +5752,7 @@ input[type=tel]:focus:not([readonly]) + label,
 input[type=number]:focus:not([readonly]) + label,
 input[type=search]:focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #26a69a;
+  color:#ff6d00;
 }
 
 input:not([type]).valid, input:not([type]):focus.valid,
@@ -5765,8 +5780,8 @@ input[type=search].valid,
 input[type=search]:focus.valid,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea:focus.valid {
-  border-bottom: 1px solid #4CAF50;
-  box-shadow: 0 1px 0 0 #4CAF50;
+  border-bottom: 1px solid #69f0ae;
+  box-shadow: 0 1px solid #69f0ae;
 }
 
 input:not([type]).valid + label:after,
@@ -5796,7 +5811,7 @@ input[type=search]:focus.valid + label:after,
 textarea.materialize-textarea.valid + label:after,
 textarea.materialize-textarea:focus.valid + label:after {
   content: attr(data-success);
-  color: #4CAF50;
+  color: #69f0ae;
   opacity: 1;
 }
 
@@ -5826,7 +5841,7 @@ input[type=search]:focus.invalid,
 textarea.materialize-textarea.invalid,
 textarea.materialize-textarea:focus.invalid {
   border-bottom: 1px solid #F44336;
-  box-shadow: 0 1px 0 0 #F44336;
+  box-shadow: 0 1px solid #F44336;
 }
 
 input:not([type]).invalid + label:after,
@@ -5913,7 +5928,7 @@ textarea.materialize-textarea + label:after {
 }
 
 .input-field label {
-  color: #9e9e9e;
+  color: #7f7f7f;
   position: absolute;
   top: 0.8rem;
   font-size: 1rem;
@@ -8252,7 +8267,7 @@ input[type=range]:focus::-ms-fill-upper {
   margin-top: 0;
   margin-bottom: .5em;
 }
-
+/***************************************              Calendario *************/
 .picker__day--infocus {
   color: #595959;
   letter-spacing: -.3;
@@ -8262,7 +8277,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .picker__day.picker__day--today {
-  color: #26a69a;
+  color: #FF5300;
 }
 
 .picker__day.picker__day--today.picker__day--selected {
@@ -8279,14 +8294,14 @@ input[type=range]:focus::-ms-fill-upper {
   border-radius: 50%;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  background-color: #26a69a;
+  background-color: #FF5300;
   color: #ffffff;
 }
 
 .picker__day--selected.picker__day--outfocus,
 .picker__day--selected:hover.picker__day--outfocus,
 .picker--focused .picker__day--selected.picker__day--outfocus {
-  background-color: #a1ded8;
+  background-color: #FEB600;
 }
 
 .picker__footer {
@@ -8297,7 +8312,7 @@ input[type=range]:focus::-ms-fill-upper {
 .picker__close, .picker__today {
   font-size: 1.1rem;
   padding: 0 1rem;
-  color: #26a69a;
+  color: #FF5300;
 }
 
 .picker__nav--prev:before,
