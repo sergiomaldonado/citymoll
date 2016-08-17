@@ -1,3 +1,4 @@
+alert("funciono");
 var config = {
   apiKey: "AIzaSyDn2BVpslXgVXFNY8exbX7zeZ-LetTwxPU",
   authDomain: "citymoll-aa08a.firebaseapp.com",
@@ -13,7 +14,7 @@ var config = {
       var uid = data.uid;
       console.log(uid);
       function mostrar(){
-      document.getElementById('icon_logout').style.display = 'inline';}
+      document.getElementById('icon_logout').style.display = '';}
       mostrar();
 
 

@@ -26,8 +26,8 @@
        <script src="../js/angular-route.min.js"></script>
        <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
-       <script src="/../js/sesion_home.js"></script>
-       <script src="/../js/logout.js"></script>
+       <script src="../js/sesion_home.js"></script>
+       <script src="../js/logout.js"></script>
 
        <script>
          // Initialize Firebase
@@ -142,16 +142,16 @@
       <section id="headTop">
          <div id="busqueda"><a id="busquedaText" href="busqueda.html">
 
-           <p style="padding-left:15px;"><i style="color:white; font-weight:200; font-size:30px;" class="material-icons left">search</i><h5 style="color:#b71c1c; float:left; margin-top:7px; font-weight:200; font-size:14px;">Lugares para comer, comprar...</h5></p>
+           <p style="padding-left:15px;"><i style="color:white; font-weight:200; font-size:30px;" class="material-icons left">search</i><h5 style="color:#b71c1c; float:left; margin-top:7px; font-weight:200; font-size:14px;">Lugares para...</h5></p>
 
           </a>
         </div>
       <!--Iconos de HEAD -->
-       <div id="iconos"><a  href="map.html">
+       <div id="iconos"><i style="display:none;" class='dropdown-button material-icons small' id="icon_logout" href='#' data-activates='dropdown1'>more_vert</i>
+          <!-- Dropdown Structure --><a  href="map.html">
          <i style="color:white;" id="icon_map" class="small material-icons">map</i>
          </a>
-         <i style="display:none;" class='dropdown-button material-icons small' id="icon_logout" href='#' data-activates='dropdown1'>more_vert</i>
-            <!-- Dropdown Structure -->
+           <!-- Dropdown Structure -->
           <ul id='dropdown1' class='dropdown-content'>
           <li><a href="#!">Ayuda</a></li>
           <li class="divider"></li>
