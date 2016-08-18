@@ -1,4 +1,4 @@
-alert("funciono");
+
 var config = {
   apiKey: "AIzaSyDn2BVpslXgVXFNY8exbX7zeZ-LetTwxPU",
   authDomain: "citymoll-aa08a.firebaseapp.com",
