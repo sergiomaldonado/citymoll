@@ -43,7 +43,7 @@ body {
 
 #busqueda{
 
-  width: 70%;
+  width: 50%;
   background-color: transparent;
   height: 100%;
   overflow: hidden;
@@ -54,8 +54,8 @@ body {
 
 #iconos{
 
-  width: 30%;
-  background-color:transparent;;
+  width: 50%;
+  background-color:blue;
   height: 100%;
   float: right;
 

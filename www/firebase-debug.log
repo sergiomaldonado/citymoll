@@ -3,7 +3,50 @@
 [debug] CLI Version:  3.0.4
 [debug] Platform:     darwin
 [debug] Node Version: v5.4.1
-[debug] Time:         Wed Aug 17 2016 09:21:52 GMT-0500 (CDT)
+[debug] Time:         Thu Aug 18 2016 15:38:10 GMT-0500 (CDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[warn] ⚠  No Firebase project directory detected. Serving static content from /Users/sergiomaldonado/Desktop/citymollApp/www
+[info] 
+[info] Server listening at: http://localhost:5000
+[debug] Error: write EIO
+    at Object.exports._errnoException (util.js:856:11)
+    at exports._exceptionWithHostPort (util.js:879:20)
+    at WriteWrap.afterWrite (net.js:763:14)
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] CLI Version:  3.0.4
+[debug] Platform:     darwin
+[debug] Node Version: v5.4.1
+[debug] Time:         Fri Aug 19 2016 15:34:35 GMT-0500 (CDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[warn] ⚠  No Firebase project directory detected. Serving static content from /Users/sergiomaldonado/Desktop/citymollApp/www
+[info] 
+[info] Server listening at: http://localhost:5000
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] CLI Version:  3.0.4
+[debug] Platform:     darwin
+[debug] Node Version: v5.4.1
+[debug] Time:         Sat Aug 20 2016 13:05:11 GMT-0500 (CDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[warn] ⚠  No Firebase project directory detected. Serving static content from /Users/sergiomaldonado/Desktop/citymollApp/www
+[info] 
+[info] Server listening at: http://localhost:5000
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] CLI Version:  3.0.4
+[debug] Platform:     darwin
+[debug] Node Version: v5.4.1
+[debug] Time:         Mon Aug 22 2016 10:31:20 GMT-0500 (CDT)
 [debug] ----------------------------------------------------------------------
 [debug] 
 [info] Starting Firebase development server...
